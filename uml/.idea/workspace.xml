@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e40c87d-0a71-4ac8-a9c1-fd9789bff300" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/util/StringTokenizer2.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/preferenceframework/PreferenceManager.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/metamodel/core/foundation/ConfigManager.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/metamodel/core/foundation/IConfigManager.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/util/NameUtil.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/util/ITaskWorker.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/util/ITaskSupervisor.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/util/ITaskFinishListener.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/util/AbstractNBTask.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/test/utilities/reports/DataReporter.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/SelectableLabel.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/TreeTablePopupListener.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/TreeTableModel.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/TreeTableCellEditor.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/RPTWizTreeTableCellEditor.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlutils/IPropertyElement.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlutils/PropertyElement.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/propertyeditor/PropertyEditor.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/RPTWizPropertyTreeTableModel.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/PropertyTreeTableModel.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/JPropertyTreeTable.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/JDescribeDotButton.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/testbed/addin/menu/TestBedMenuManager.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/testbed/addin/menu/SubMenuManager.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/pulldownbutton/IPulldownButtonInvoker.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/pulldownbutton/IPulldownAction.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/workspacemanagement/IWorkspaceManager.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/workspacemanagement/WSElementImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/ETRect.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/FileManip.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/Log.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/PathManip.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/PreventReEntrance.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/RandomGUID.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/Strings.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/StringUtilities.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/URIHelper.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/URILocator.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/XMLManip.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/MessageData.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/MessageDataFilter.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/MessageFacilityFilter.java" />
+        <option value="$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/MessageService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="15" />
+    <option name="y" value="30" />
+    <option name="width" value="1890" />
+    <option name="height" value="960" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="uml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uml" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e40c87d-0a71-4ac8-a9c1-fd9789bff300" name="Default Changelist" comment="" />
+      <created>1545902016736</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545902016736</updated>
+      <workItem from="1545902018172" duration="7768000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7768000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24939272" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Java Regex Tester" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/PropertyTreeTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="636" column="9" lean-forward="true" selection-start-line="636" selection-start-column="9" selection-end-line="636" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/PropertyNameCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/JTreeTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6472">
+          <caret line="656" column="16" selection-start-line="656" selection-start-column="16" selection-end-line="656" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/JPropertyTreeTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="243" column="9" selection-start-line="243" selection-start-column="9" selection-end-line="243" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/JDescribeDotButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="147" column="61" selection-start-line="147" selection-start-column="61" selection-end-line="147" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/JDescribeComboBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1729">
+          <caret line="152" column="38" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/JDescribeButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1749">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/treetable/JDefaultMutableTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-882">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/testbed/addin/menu/TestBedMenuManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4585">
+          <caret line="562" column="17" selection-start-line="562" selection-start-column="17" selection-end-line="562" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/testbed/addin/menu/SubMenuManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="454" column="27" selection-start-line="454" selection-start-column="27" selection-end-line="454" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/testbed/addin/menu/Separator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/pulldownbutton/PopupMenuInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-556">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/pulldownbutton/JPullDownButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-185">
+          <caret line="194" column="6" selection-start-line="194" selection-start-column="6" selection-end-line="194" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/pulldownbutton/IPulldownButtonInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="61" column="3" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/ui/swing/pulldownbutton/IPulldownAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="56" column="3" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/workspacemanagement/IWorkspaceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/workspacemanagement/WSElementImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="840" column="45" lean-forward="true" selection-start-line="840" selection-start-column="45" selection-end-line="840" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/Debug.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2069">
+          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/BundleSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/ETRect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="465" lean-forward="true" selection-start-line="465" selection-end-line="465" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/ETPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-984">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/ExtensionFileFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/FileExtensions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/FileManip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-219">
+          <caret line="125" column="31" lean-forward="true" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/FileSysManip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3874">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/ETDeviceRect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="382" column="9" lean-forward="true" selection-start-line="382" selection-start-column="9" selection-end-line="382" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/PathManip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="286" column="7" lean-forward="true" selection-start-line="286" selection-start-column="7" selection-end-line="286" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/NamedCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/PreventReEntrance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/ProductRetriever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/RandomGUID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="267" column="21" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/ResultCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/Strings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="110" column="8" lean-forward="true" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/StringUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="954" column="42" lean-forward="true" selection-start-line="954" selection-start-column="42" selection-end-line="954" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/UMLSupportResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/UMLUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-457">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/URIHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+          <folding>
+            <element signature="e#2438#2439#0" expanded="true" />
+            <element signature="e#2483#2484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/URILocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="293" column="17" lean-forward="true" selection-start-line="293" selection-start-column="17" selection-end-line="293" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlsupport/XMLManip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="1609" column="9" lean-forward="true" selection-start-line="1609" selection-start-column="9" selection-end-line="1609" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/MessageData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-318">
+          <caret line="270" column="26" lean-forward="true" selection-start-line="270" selection-start-column="26" selection-end-line="270" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/MessageDataFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="374" column="1" lean-forward="true" selection-start-line="374" selection-start-column="1" selection-end-line="374" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/MessageFacilityFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="113" column="26" lean-forward="true" selection-start-line="113" selection-start-column="26" selection-end-line="113" selection-end-column="26" />
+          <folding>
+            <element signature="e#3946#3947#0" expanded="true" />
+            <element signature="e#4007#4008#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/MessageFacility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1955">
+          <caret line="69" column="69" lean-forward="true" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/MsgCoreConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/ThermCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-219">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/UMLMessagingEventDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-624">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/netbeans/modules/uml/core/support/umlmessagingcore/UMLMessagingHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1287">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

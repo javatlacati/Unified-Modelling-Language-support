@@ -1,0 +1,1586 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+
+  <meta name="OWNER" content="This file is maintained by Chris Kasso &lt;kasso@sun.com&gt;. If you want to add/modify/delete a question or change the instructions in this document please contact Chris to avoid having your changes overwritten. Thanks.">
+
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=windows-1252">
+
+  <meta name="CHANGED" content="20061222;16420126">
+
+  <meta name="Version" content="2.1">
+  <title>WSARC Review Questions</title>
+
+
+</head>
+
+
+<body>
+
+<h3> WSARC Review Questions </h3>
+
+<p> <font size="-1"> Version 2.1 </font> </p>
+
+<hr width="95%">
+<p> Please maintain the history of your responses: </p>
+
+<blockquote>
+  <table border="1" cellpadding="2" cellspacing="3" width="95%">
+
+    <col width="25%"> <col width="15%"> <col width="60%"> <tbody>
+
+      <tr>
+
+        <th>
+        <p> <font size="2"> Author </font> </p>
+
+        </th>
+
+        <th>
+        <p> <font size="2"> Date </font> </p>
+
+        </th>
+
+        <th>
+        <p> <font size="2"> Comments </font>
+        </p>
+
+        </th>
+
+      </tr>
+
+      <tr>
+
+        <td>
+        <p> <font size="2"> Your name </font>
+        </p>
+
+        </td>
+
+        <td>
+        <p> <font size="2"> mm/dd/yyyy </font>
+        </p>
+
+        </td>
+
+        <td>
+        <p align="left"> <font size="2">comments
+        </font> </p>
+
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>
+        <p> <font size="2">George Vasick </font>
+        </p>
+
+        </td>
+
+        <td>
+        <p> <font size="2">08/06/2007</font></p>
+
+        </td>
+
+        <td>
+        <p align="left"> <font size="2"> 1st
+draft </font> </p>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+  </table>
+
+</blockquote>
+
+<hr width="95%">
+<ol>
+
+  <li>
+    <h3> What are we reviewing? </h3>
+
+    <ol>
+
+      <li>
+        <p> <strong> Project name: </strong> </p>
+
+        <p> NetBeans 6.0 UML<br>
+
+        </p>
+
+      </li>
+
+      <li>
+        <p> <strong> ARC case number: </strong> </p>
+
+        <p><a href="http://sac.sfbay/arc/WSARC/2007/343/">WSARC/2007/343</a>
+        </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Project's PAC full title and email
+address: </strong> </p>
+
+        <p> Java Tools PAC<br>
+
+        <a href="mailto:javatools-pac@Sun.COM">javatools-pac@Sun.COM</a>
+        </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Name(s) of the person(s) providing
+answers to the
+questions: </strong> </p>
+
+        <p> George Vasick<br>
+
+        </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Are your answers to these questions
+for an
+Inception or Commitment review? </strong> </p>
+
+        <p> Inception.</p>
+
+      </li>
+
+      <li>
+        <p> <strong> Major milestones dates: </strong>
+        <br>
+
+Alpha: M9 JavaONE Preview 05/2007<br>
+
+Customer Acceptance/Beta: Beta1 09/2007<br>
+
+Revenue Release/GA: 11/2007</p>
+
+      </li>
+
+      <li>
+        <p> <strong> Proposed release binding (See: <a href="http://sac.eng.sun.com/BestPractices/release_taxonomy.html">
+Release Taxonomy</a>) (Major, Minor, Micro, Patch): </strong>
+        </p>
+
+        <p> Major</p>
+
+        <p> <strong> Product version number: </strong>
+        </p>
+
+        <p> 6.0</p>
+
+      </li>
+
+      <li>
+        <p> <strong> For projects modifying existing
+products: <br>
+
+Enumerate incompatibilities this project introduces that existing
+customers/user will see: </strong> </p>
+
+        <p> UML projects from JSE 8.1 and NB 5.5/5.5.1 can be
+opened
+and continued with NB 6.0.&nbsp; Once the user has done so, the
+project
+can no longer be opened with the previous version of the IDE.<br>
+
+        </p>
+
+        <p> <strong> What is the size of the existing
+customer base? </strong> </p>
+
+        <p> Approximately 80K downloads since 5.5 FCS,&nbsp;
+April 2007
+through June 2007.<br>
+
+        </p>
+
+      </li>
+
+      <li>
+        <p> <strong> If a previous version of this project
+has been
+through an ARC commitment review before what is the ARC case number(s)
+for the last case(s)? </strong> </p>
+
+        <p> <a href="http://sac.eng.sun.com/Archives/CaseLog/arc/WSARC/2005/716/">WSARC/2005/716</a>.
+        </p>
+
+      </li>
+
+      <li>
+        <p> <strong> List all hardware platforms and
+Operating Systems
+this project supports: </strong> </p>
+
+        <p> Windows<br>
+
+Linux<br>
+
+Solaris<br>
+
+X86<br>
+
+Sparc </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Please provide a short summary of
+what this
+project is. This may be copied from the project's one-pager. The case
+owner needs a 1 to 4 paragraph description for the beginning of the
+Opinion document. </strong> </p>
+
+        <p> The UML Modeling project provides UML modeling
+features to the NetBeans
+IDE. UML modeling allows analysts and designers to design applications
+using a standard modeling language. Developers are then able to
+generate source code from the UML model and update the model from
+changes made in their source code.<br>
+
+        <br>
+
+The UML Modeling module provides the following main features:</p>
+
+      </li>
+
+      <ul>
+
+        <li>Forward and reverse engineering:&nbsp;
+You can generate Java code from your model as
+well as create UML models from your existing Java source. </li>
+
+        <li>Code generation:&nbsp;
+The code generated by the UML module is free of any artificial markers,
+e.g. comments or tags, introduced solely to support code generation. </li>
+
+        <li>Supports 8 diagrams:
+          <ul>
+
+            <li> Activity diagram </li>
+
+            <li> Class diagram </li>
+
+            <li> Collaboration diagram </li>
+
+            <li> Component diagram </li>
+
+            <li> Deployment diagram </li>
+
+            <li> Sequence diagram </li>
+
+            <li> State diagram </li>
+
+            <li> Use Case diagram </li>
+
+          </ul>
+
+        </li>
+
+        <li>Requirements gathering:&nbsp;
+You can bring application design requirements into your model via an
+XML file or import them from Telelogic's DOORS requirements tool. </li>
+
+        <li>Predefined and Extensible Design Patterns: There is a
+full
+set of design patterns including EJB 1.1, EJB 2.0 and Gang of Four (23
+patterns).</li>
+
+        <li>Web Reporting: You can create Javadoc style web
+reports
+from your model allowing your work to be easily shared with
+others.</li>
+
+      </ul>
+
+      <li>
+        <p> <strong> Who are the target users for this
+project
+(Administrators, Developers, End-users, etc)? </strong> </p>
+
+        <p> Developers and Architects.<br>
+
+        </p>
+
+      </li>
+
+      <li>
+        <p> <strong> If this is a modification to an
+existing product,
+enumerate the changes/additions to the public interfaces. In other
+words, what is the difference from one version to the next? If this is
+a new product enumerate the significant features. </strong> </p>
+
+        <p><a href="http://wiki.netbeans.org/wiki/view/CustomizableCodeGeneration"> Customizable Code Generation</a><br>
+        <a href="http://wiki.netbeans.org/wiki/view/DomainModelingCodeGeneration">
+Domain Modeling Code Generation</a><br>
+        <a href="http://wiki.netbeans.org/wiki/view/SourceCodeSynchronization">
+Source Code Synchronization</a><br>
+        <a href="http://wiki.netbeans.org/wiki/view/UMLOptionsDialog">
+New Oprions Panel</a> </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Please provide diagrams that
+illustrate the
+project's architecture and interfaces. Be specific about deliverable
+components and their interfaces. Pay particular attention to describing
+the scope of the project, especially near the project boundaries. </strong>
+        </p>
+
+        <p> <img style="width: 753px; height: 617px;" alt="uml block diagram" src="uml-arc.png"> </p>
+
+      </li>
+
+      <li>
+        <p> <strong> What is the motivation for this
+project? What are
+the expected benefits for Sun? </strong> </p>
+
+        <p>Developer adoption. Worldwide, significat percentages
+of
+developers
+use UML:<br>
+
+APAC: 50.60%<br>
+
+EMEA: 40.40%<br>
+
+NA: 42.30%<br>
+
+Note, UML is also required by many enterprise class customers. </p>
+
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li>
+    <h3> Related Projects. </h3>
+
+    <ol>
+
+      <li>
+        <p> <strong> Are there related projects at Sun?
+What are their
+relationships to this project? </strong> </p>
+
+        <p>UML is included in the NetBeans 6.0 Full installer..<br>
+
+        </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Enumerate the (known) projects at Sun
+which
+depend on this project. </strong> </p>
+
+        <p> None.</p>
+
+      </li>
+
+      <li>
+        <p> <strong> Enumerate the projects this project
+depends on. </strong> </p>
+
+        <p> NetBeans 6.0 Basic.&nbsp; UML runs within the
+NetBeans IDE.</p>
+
+      </li>
+
+      <li>
+        <p> <strong> Enumerate the products this project
+bundles (i.e.
+includes in its distribution). </strong> </p>
+
+        <p> None.</p>
+
+      </li>
+
+      <li>
+        <p> <strong> Enumerate any non-Sun projects this
+project
+depend on. </strong> </p>
+
+        <p>Antrl<br>
+
+Dom4j<br>
+
+Tom Sawyer Graph Library </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Does this project incorporate any
+software that
+is governed by the GNU General Public License (See <a href="%20%20%20%20http://http://www.gnu.org/copyleft/gpl.html%3Fcid=6">
+http://www.gnu.org/copyleft/gpl.html</a>. </strong> </p>
+
+        <p> No.</p>
+
+      </li>
+
+      <li>
+        <p><!--
+<p><LI><strong><Font color="red">XXX: Put shared component question here - Darren/Stephen to provide content. </font></strong><p>
+<p>
+--><strong>What
+future projects should be started or
+avoided to
+help your project succeed, why? </strong></p>
+
+        <p> None. </p>
+
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li>
+    <h3> Project Delivery. </h3>
+
+    <ol>
+
+      <li>
+        <p> <strong> Will the project be bundled in
+(integrated into)
+Solaris? </strong> </p>
+
+        <p> No.</p>
+
+        <p> <strong> Solaris 9 update release: </strong>N/A.
+        </p>
+
+        <p> <strong> Solaris 10 release: </strong>N/A.
+        </p>
+
+        <p> <strong> Solaris 11 release: </strong>N/A.
+        </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Does the project ship as part of
+project Java ES
+or what is your roadmap with respect to shipping with project Java ES? </strong>
+        </p>
+
+        <p> UML is included in JSE 8.1, the campion tools product
+for
+JES 5.&nbsp; A future version of NetBeans will be paired with JES 6.<br>
+
+        </p>
+
+      </li>
+
+      <li>
+        <p> <strong> For each platform the project
+delivers on, what
+installation mechanism will be used to install the project (SVR4
+Packages, SetupSDK, RPM's, etc)? </strong> </p>
+
+        <p> NBM's </p>
+
+      </li>
+
+      <li>
+        <p> <strong> List any SVR4 package names and a
+short
+description of each <i> new or modified </i> package you
+will be
+delivering. Additionally include in your case materials prior to
+commitment the spec for the contents of the packages. The package
+prototype files are acceptable. </strong> </p>
+
+        <p> N/A </p>
+
+      </li>
+
+      <li>
+        <p> <strong> List any RPM package names and a
+short
+description of each <i> new or modified </i> RPM you will
+be
+delivering. Additionally include in your case materials prior to
+commitment the spec for the contents of the RPM's. </strong> </p>
+
+        <p> N/A </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Default installation directory: </strong>
+        <br>
+
+        <strong> Solaris: </strong>Same as NetBeans 6.0. <br>
+
+        <strong>Linux: </strong>Same as
+NetBeans 6.0. <br>
+
+        <strong> Windows: </strong>Same as
+NetBeans 6.0. <br>
+
+        <strong> Other: </strong>N/A </p>
+
+        <p> <strong> Is the user allowed to override these
+locations? </strong> </p>
+
+        <p> Yes. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Can multiple versions and/or multiple
+copies of
+the project be available on the same system at the same time? </strong>
+        </p>
+
+        <p> Yes. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> When the project is uninstalled does
+it leave
+anything on the filesystem? How does the user clean up files that
+remain? </strong> </p>
+
+        <p> Same as
+NetBeans 6.0. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Can the project's installer
+upgrade-in-place a
+prior installation (down-rev) of the project? On all platforms
+supported? </strong> </p>
+
+        <p> Upgrades can be performed via the plugin manager. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> During the installation process does
+the
+installer execute any programs or [class-action] scripts the project
+provides? </strong> </p>
+
+        <p> No. </p>
+
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li>
+    <h3> Platform Dependencies. </h3>
+
+    <ol>
+
+      <li>
+        <p> <strong> Does the project require a JDK or a
+JRE (state
+which)? What JVM versions does the project require and/or support? </strong>
+        </p>
+
+        <p> JDK. &nbsp;Java SE 5 and 6 are supported. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Does the project expect the JVM to
+already be
+installed on the system or does the project install the JVM?</strong>
+        </p>
+
+        <p> Yes. </p>
+
+        <p> <strong> If the
+project installs the JVM where is it installed (See LSARC/2002/172)? </strong>
+        </p>
+
+        <p> N/A. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Does the project run in a J2EE
+environment? </strong> </p>
+
+        <p> No. </p>
+
+        <p> <strong> If
+so which version of the J2EE standard do you support. </strong></p>
+
+        <p> N/A </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Do you intend
+replace/augment any of
+the J2EE
+platform jars with a different version? </strong> </p>
+
+        <p> No. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Which J2EE application
+servers do you
+qualify
+against </strong> </p>
+
+        <p> N/A. </p>
+
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li>
+    <h3><strong> Administration and Observability.</strong><br>
+
+    </h3>
+
+  </li>
+
+  <p> N/A. </p>
+
+  <li>
+    <h3><strong> Reliability, Availability and
+Serviceability (RAS). </strong></h3>
+
+    <p> N/A. </p>
+
+  </li>
+
+  <li>
+    <h3><strong> Security. </strong></h3>
+
+    <p> N/A. </p>
+
+  </li>
+
+  <li>
+    <h3><strong> Operational Environment. </strong></h3>
+
+    <ol>
+
+      <li>
+        <p><strong> What environment
+variables are used
+(both
+consumed and produced)? </strong> </p>
+
+        <p> None. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> What entries are stored
+or retrieved
+from the
+Windows Registry? </strong> </p>
+
+        <p> None. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> What exit statuses are
+exported? </strong> </p>
+
+        <p> None. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> What signals (man
+signal(5)) are
+issued or
+caught? </strong> </p>
+
+        <p> None. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> What network port
+numbers are
+utilized? If you
+are exporting any ports have they been registered with <a href="http://www.iana.org/"> www.iana.org</a>? </strong>
+        </p>
+
+        <p> None. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> If you utilize a port
+in the private
+range (above
+49152) how do you test for availability? </strong> </p>
+
+        <p> None. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Does the project
+utilize cron or the
+Windows Task
+Scheduler? Describe how it is used and how often tasks run: </strong>
+        </p>
+
+        <p> No. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Does the project use
+any hidden (dot)
+files? </strong> </p>
+
+        <p> Yes, the netbeans userdir, .netbeans. </p>
+
+        <p> <strong> Any temp files? </strong> </p>
+
+        <p> No. </p>
+
+        <p> <strong> Any files in the user's
+home
+directory? </strong> </p>
+
+        <p> Yes. The .netbeans userdir is created in the user's
+home directory by default. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Does the project
+utilize a
+proscriptive licensing
+mechanism? </strong> </p>
+
+        <p> No. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Command line
+interfaces. Provide
+specifications
+for any command line interfaces the project introduces or modifies
+(preferably in man page format). The specs should include the command
+name, description of what it does, command options, exit status and
+output format. Command options should be getopt (man intro(1)) and/or <a href="http://sac.eng.sun.com/PSARC/1999/645/commit.materials/clip.pdf">
+CLIP </a> compliant. </strong> </p>
+
+        <p> N/A. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> For each command list
+any libraries
+it uses.
+(Hint: Use ldd and dump -Lv). Identify and justify the requirement for
+any static libraries. </strong> </p>
+
+        <p> N/A. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Does this project
+deliver any shared
+libraries?
+Enumerate the names of any public shared libraries. </strong> </p>
+
+        <p> <strong> Are they versioned and
+scoped? </strong> </p>
+
+        <p> N/A. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Does this project
+delivery any static
+libraries? </strong> </p>
+
+        <p> No. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Is the project 64-bit
+clean? </strong> </p>
+
+        <p> Yes. </p>
+
+        <p> <strong> Is there any
+architectural reason why
+the project
+would not work in a 64-bit environment? See <a href="http://docs.sun.com/db/doc/806-6543">
+http://docs.sun.com/db/doc/806-6543 </a> for more info. </strong>
+        </p>
+
+        <p> No. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Is the project
+compatible with IPV6
+interfaces
+and addresses? </strong> </p>
+
+        <p> N/A. </p>
+
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li>
+    <h3><strong> Internationalization and Localization </strong></h3>
+
+    <ol>
+
+      <li>
+        <p> <strong> Has the project been
+internationalized? (See <a href="http://i18n.red.iplanet.com/faq.html">
+http://i18n.red.iplanet.com/faq.html </a> for an
+internationalization
+FAQ) </strong> </p>
+
+        <p> Yes. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Which locales does the
+project
+support? Indicate
+which locale is the default. </strong> </p>
+
+        <p> English, Japanese, Simplified Chinese. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Does the project use
+resource files
+or solaris
+locale databases? </strong> </p>
+
+        <p> resource files. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Does the project set
+any of the
+environment
+variables: LANG, LC_ALL, LC_CTYPE, LC_COLLATE, LC_CTIME, LC_NUMERIC,
+LC_MONETARY, LC_MESSAGES? </strong> </p>
+
+        <p> No </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Are there other
+projects that depend
+upon this
+project, that require locales that will not be provided by this
+project? </strong> </p>
+
+        <p> No. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> How does the project
+behave when run
+in the C
+locale (the default Solaris locale)? </strong> </p>
+
+        <p> It defaults to English. </p>
+
+      </li>
+
+      <li>
+        <p> <strong> Does the project follow
+the solaris
+convention
+for L10N package names, see <a href="http://sekai.sfbay/projects3/l10n_steering_committee/l10n_steering_committee/web/docs/pkg_convention.txt">
+http://sekai.sfbay/projects3/l10n_steering_committee/l10n_steering_committee/web/docs/pkg_convention.txt</a>?
+        </strong> </p>
+
+        <p> N/A. </p>
+
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li>
+    <h3><strong> Desktop Operational Environment. </strong></h3>
+
+    <ol>
+
+      <li>
+        <p><strong> Does this project
+supply a graphical
+user
+interface? If so please provide a user interface specification with
+your case materials. </strong> </p>
+
+        <p> Documented in the online help provided within the
+NetBeans IDE. </p>
+
+      </li>
+
+      <li>
+        <p><strong> Does this project add
+any items to
+any existing
+system menus (e.g. Windows Start menu)? Describe what is added. </strong>
+        </p>
+
+        <p> No. </p>
+
+      </li>
+
+      <li>
+        <p><strong> Does this project add
+any icons to
+the user's
+desktop? </strong> </p>
+
+        <p> No. </p>
+
+      </li>
+
+      <li>
+        <p><strong> Does this project
+introduce any new
+MIME types? </strong> </p>
+
+        <p> No. </p>
+
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li>
+    <h3><strong> Interfaces Imported and Exported. </strong></h3>
+
+    <p><strong> This is an umbrella project description for
+Open ESB.
+Detailed
+interface changes or new interface descriptions will appear in
+corresponding one pagers and functional specifications. </strong></p>
+
+    <ol>
+
+      <li>
+        <p><strong> Interfaces Imported </strong> </p>
+
+        <h4>Generally imported interfaces</h4>
+
+        <table border="3" cellpadding="6" width="90%">
+
+          <tbody>
+
+            <tr>
+
+              <th valign="bottom" width="30%"><b>Interface
+Name</b></th>
+
+              <th valign="bottom" width="15%"><b>Stability
+Classification</b> </th>
+
+              <th valign="bottom" width="45%"><b>Specified
+in What Document</b>? </th>
+
+            </tr>
+
+            <tr>
+
+              <td>Java API at least 1.5</td>
+
+              <td><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-stable" target="_blank">Stable</a></td>
+
+              <td><a href="http://java.sun.com">java.sun.com</a>
+(<a href="http://sac.eng.sun.com/PSARC/2000/436/">PSARC/2000/436</a>)</td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">Tom Sawyer Graphic Library<br>
+
+              </td>
+
+              <td valign="top"><a href="http://openide.netbeans.org/tutorial/api-design.html#category-third">Third
+Party</a><br>
+
+              </td>
+
+              <td valign="top"><a href="http://tomsawyer.com/">tomsawyer.com</a><br>
+
+              </td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">Antlr 2.7.2<br>
+
+              </td>
+
+              <td valign="top"><a href="http://openide.netbeans.org/tutorial/api-design.html#category-third">Third
+Party</a></td>
+
+              <td valign="top"><a href="http://www.antlr.org" class="l" onmousedown="return clk(0,'','','res','1','')">antlr 2.7 2</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">dom4j 1.2<br>
+
+              </td>
+
+              <td valign="top"><a href="http://openide.netbeans.org/tutorial/api-design.html#category-third">Third
+Party</a></td>
+
+              <td valign="top"><a href="http://www.dom4j.org/">dom4j.org</a><br>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+        </table>
+
+        <br>
+
+        <h4>Interfaces imported by individual modules</h4>
+
+        <table border="3" cellpadding="6" width="90%">
+
+          <thead><th valign="bottom" width="30%"><b>Interface
+Name</b></th>
+
+          <th valign="bottom" width="15%"><b>Stability
+Classification</b></th>
+
+          <th valign="bottom" width="45%"><b>Specified
+in What Document?</b></th>
+
+          </thead> <tbody>
+
+            <tr>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr class="tabler">
+
+              <td>&nbsp;org.jdesktop.layout</td>
+
+              <td><a href="http://openide.netbeans.org/tutorial/api-design.html#category-standard">Standard</a></td>
+
+              <td><a href="http://www.netbeans.org/download/dev/javadoc/org-jdesktop-layout/overview-summary.html"><br>
+
+              </a></td>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">org.openide.actions</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a></span> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-openide-actions/overview-summary.html">org-openide-actions/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">org.openide.awt</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-openide-awt/overview-summary.html">org-openide-awt/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">&nbsp;org.openide.dialogs</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-openide-dialogs/overview-summary.html">org-openide-dialogs/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">&nbsp;org.openide.explorer</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-openide-explorer/overview-summary.html">org-openide-explorer/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">org.openide.filesystems</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-openide-filesystems/overview-summary.html">org-openide-filesystems/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">org.openide.io</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-openide-io/overview-summary.html">org-openide-filesystems/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">org.openide.loaders</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-openide-loaders/overview-summary.html">org-openide-loaders/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">org.openide.modules</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-openide-modules/overview-summary.html">org-openide-modules/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">org.openide.nodes</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-openide-nodes/overview-summary.html">org-openide-nodes/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">&nbsp;org.openide.text</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-openide-text/overview-summary.html">org-openide-text/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">org.openide.util</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-openide-util/overview-summary.html">org-openide-util/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">org.openide.windows</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-openide-windows/overview-summary.html">org-openide-windows/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td valign="top">org.netbeans.api.java</td>
+
+              <td valign="top"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a> </td>
+
+              <td valign="top"><a href="http://www.netbeans.org/download/dev/javadoc/org-netbeans-api-java/overview-summary.html">org-openide-filesystems/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr class="tabler">
+
+              <td>&nbsp;org.netbeans.api.progress</td>
+
+              <td><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span></a><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a></td>
+
+              <td><a href="http://www.netbeans.org/download/dev/javadoc/org-netbeans-api-progress/overview-summary.html">org-netbeans-api-progress/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr class="tabler">
+
+              <td>&nbsp;org.netbeans.libs.javacapi</td>
+
+              <td><a href="http://openide.netbeans.org/tutorial/api-design.html#category-standard">Standard</a></td>
+
+              <td><a href="http://www.netbeans.org/download/dev/javadoc/org-netbeans-libs-javacapi/overview-summary.html"><br>
+
+              </a></td>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr class="tabler">
+
+              <td>&nbsp;org.netbeans.modules.java.project</td>
+
+              <td><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a></td>
+
+              <td><a href="http://www.netbeans.org/download/dev/javadoc/org-netbeans-modules-java-project/overview-summary.html">org-netbeans-modules-java-project/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr class="tabler">
+
+              <td>&nbsp;org.netbeans.modules.java.source</td>
+
+              <td><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(221, 204, 128);"><a href="http://openide.netbeans.org/tutorial/api-design.html#category-devel" target="_blank">Under Development</a></span></td>
+
+              <td><a href="http://www.netbeans.org/download/dev/javadoc/org-netbeans-modules-java-source/overview-summary.html">org-netbeans-modules-java-source/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr class="tabler">
+
+              <td>&nbsp;org.netbeans.modules.options.api</td>
+
+              <td><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(221, 204, 128);"></span></a><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(221, 204, 128);"><a href="http://openide.netbeans.org/tutorial/api-design.html#category-devel" target="_blank">Under Development</a></span></td>
+
+              <td><a href="http://www.netbeans.org/download/dev/javadoc/org-netbeans-modules-options-api/overview-summary.html">org-netbeans-modules-options-api/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr class="tabler">
+
+              <td>&nbsp;org.netbeans.modules.project.ant</td>
+
+              <td><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a></td>
+
+              <td><a href="http://www.netbeans.org/download/dev/javadoc/org-netbeans-modules-project-ant/overview-summary.html">org-netbeans-modules-project-ant/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr class="tabler">
+
+              <td>&nbsp;org.netbeans.modules.projectapi</td>
+
+              <td><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a></td>
+
+              <td><a href="http://www.netbeans.org/download/dev/javadoc/org-netbeans-modules-projectapi/overview-summary.html">org-netbeans-modules-projectapi/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr class="tabler">
+
+              <td>&nbsp;org.netbeans.modules.projectuiapi</td>
+
+              <td><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a></td>
+
+              <td><a href="http://www.netbeans.org/download/dev/javadoc/org-netbeans-modules-projectuiapi/overview-summary.html">org-netbeans-modules-projectuiapi/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr class="tabler">
+
+              <td>&nbsp;org.netbeans.modules.queries</td>
+
+              <td><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official" target="_blank">Official</a></td>
+
+              <td><a href="http://www.netbeans.org/download/dev/javadoc/org-netbeans-modules-queries/overview-summary.html">org-netbeans-modules-queries/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr class="tabler">
+
+              <td>&nbsp;org.netbeans.modules.schema2beans</td>
+
+              <td><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span></a><a href="http://openide.netbeans.org/tutorial/api-design.html#category-stable" target="_blank">Stable</a></td>
+
+              <td><a href="http://schema2beans.netbeans.org/docs.html">http://schema2beans.netbeans.org/docs.html<br>
+
+              </a></td>
+
+            </tr>
+
+            <tr>
+
+            </tr>
+
+            <tr>
+
+              <td>&nbsp;org.netbeans.spi.palette</td>
+
+              <td><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"><a href="http://openide.netbeans.org/tutorial/api-design.html#category-stable" target="_blank">Stable</a></span></td>
+
+              <td><a href="http://www.netbeans.org/download/dev/javadoc/org-netbeans-spi-palette/overview-summary.html">org-netbeans-spi-palette/overview-summary.html</a></td>
+
+            </tr>
+
+            <tr>
+
+              <td>&nbsp;org.netbeans.spi.navigator</td>
+
+              <td><a href="http://openide.netbeans.org/tutorial/api-design.html#category-official"><span style="font-style: normal; font-size: medium; font-weight: normal; background-color: rgb(255, 255, 255);"></span></a><a href="http://openide.netbeans.org/tutorial/api-design.html#category-stable" target="_blank">Stable</a></td>
+
+              <td><a href="http://www.netbeans.org/download/dev/javadoc/org-netbeans-spi-navigator/overview-summary.html">org-netbeans-spi-navigator/overview-summary.html</a></td>
+
+            </tr>
+
+          </tbody>
+        </table>
+
+        <br>
+
+      </li>
+
+      <li>
+        <p><strong> Interfaces Exported </strong> </p>
+
+        <table border="1" cellpadding="9" cellspacing="3" width="100%">
+
+          <col width="30%"> <col width="20%">
+          <col width="50%"> <tbody>
+
+            <tr valign="top">
+
+              <td>
+              <p> <strong> Interface </strong> </p>
+
+              </td>
+
+              <td>
+              <p> <strong> Classification </strong>
+              </p>
+
+              </td>
+
+              <td>
+              <p> <strong> Comments </strong> </p>
+
+              </td>
+
+            </tr>
+
+            <tr>
+
+              <td>None<br>
+
+              </td>
+
+              <td> <br>
+
+              </td>
+
+              <td> <br>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+        </table>
+
+        <br>
+
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li>
+    <h3><strong> Interface Extensibility and Evolution. </strong></h3>
+
+    <ol>
+
+      <li>
+        <p><strong> How is the project and
+its
+significant interfaces
+versioned? </strong> </p>
+
+        <p> The spec number is incremented in the corresponding
+NBM. </p>
+
+      </li>
+
+      <li>
+        <p><strong> Can this version
+co-exist with
+existing standards
+and with earlier or later versions or with alternative implementations
+(perhaps by other vendors)? </strong> </p>
+
+        <p> N/A </p>
+
+      </li>
+
+      <li>
+        <p><strong> Are there
+incompatibilities with
+prior versions
+of the interface? </strong> </p>
+
+        <p><strong> if yes, how is the
+transition to the
+new version
+to be accomplished? </strong> </p>
+
+        <p> N/A </p>
+
+      </li>
+
+    </ol>
+
+  </li>
+
+  <li>
+    <h3><strong> Interoperability. </strong></h3>
+
+    <ol>
+
+      <li>
+        <p><strong> If applicable, explain
+your project's
+interoperability with other major implementations in the industry: </strong>
+        </p>
+
+        <p> There is currently no interoperability. Support of
+XMI import/export is on our roadmap for a future release. </p>
+
+      </li>
+
+      <li>
+        <p><strong> What would be different
+about
+installing your
+project in a heterogeneous site instead of a homogeneous one (e.g. All
+running Solaris)? </strong> </p>
+
+        <p> No issues. The project is completely implemented in
+Java. </p>
+
+      </li>
+
+    </ol>
+
+  </li>
+
+</ol>
+
+<strong><br>
+
+</strong>
+<hr width="95%"><strong><br>
+
+</strong>
+<p><strong> Please identify any issues that you would like
+the ARC to
+address: </strong></p>
+
+<p> None. </p>
+
+</body>
+</html>
