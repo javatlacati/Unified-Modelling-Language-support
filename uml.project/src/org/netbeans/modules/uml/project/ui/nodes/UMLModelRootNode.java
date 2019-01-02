@@ -54,8 +54,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.awt.Image;
 import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.io.File;
+import java.io.IOException;
 import javax.swing.Action;
 import javax.swing.SwingUtilities;
 import org.netbeans.spi.project.support.ant.PropertyEvaluator;
@@ -74,7 +74,6 @@ import org.netbeans.modules.uml.project.ui.nodes.actions.NewPackageType;
 import org.netbeans.modules.uml.project.ui.nodes.actions.NewElementType;
 import org.netbeans.modules.uml.project.UMLProjectModule;
 import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl;
-import org.netbeans.modules.uml.ui.support.projecttreesupport.ProjectTreeComparable;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
@@ -173,39 +172,37 @@ public class UMLModelRootNode extends UMLModelElementNode
                         getCookieSet().add(cookie);
                 }
                     
-                dobj.addPropertyChangeListener(new PropertyChangeListener()
-                {
-                    public void propertyChange(PropertyChangeEvent evt)
+                dobj.addPropertyChangeListener((PropertyChangeEvent evt) -> {
+                    if (evt.getPropertyName().equals(DataObject.PROP_MODIFIED))
                     {
-                        if (evt.getPropertyName().equals(DataObject.PROP_MODIFIED))
+                        if (((Boolean)evt.getNewValue()))
                         {
-                            if (((Boolean)evt.getNewValue()).booleanValue())
-                            {
-                                if (getCookie(SaveCookie.class) == null)
-                                    getCookieSet().add(dobj.getCookie(SaveCookie.class));
-                            }
-                            else
-                            {
-                                Cookie cookie = getCookie(SaveCookie.class);
-                                if (cookie!=null)
-                                    getCookieSet().remove(cookie);
-                            }
+                            if (getCookie(SaveCookie.class) == null)
+                                getCookieSet().add(dobj.getCookie(SaveCookie.class));
+                        }
+                        else
+                        {
+                            Cookie cookie = getCookie(SaveCookie.class);
+                            if (cookie!=null)
+                                getCookieSet().remove(cookie);
                         }
                     }
                 });
             }
         }
-        catch (Exception e)
+        catch (IOException e)
         {
             // project file object not found, 
         }
     }
     
+    @Override
     public String getDisplayName()
     {
         return this.displayName;
     }
     
+    @Override
     public String getName()
     {
         return this.getDisplayName();
@@ -219,6 +216,7 @@ public class UMLModelRootNode extends UMLModelElementNode
      *
      * @return An array of new type operations that are allowed.
      */
+    @Override
     public NewType[] getNewTypes()
     {
         String elType = getElementType();
@@ -249,9 +247,10 @@ public class UMLModelRootNode extends UMLModelElementNode
         return retVal;
     }
     
+    @Override
     public Action[] getActions( boolean context )
     {
-        ArrayList<Action> actions = new ArrayList<Action>();
+        ArrayList<Action> actions = new ArrayList<>();
         
         // actions.add(CommonProjectActions.openSubprojectsAction());
         // actions.add(CommonProjectActions.closeProjectAction());
@@ -278,6 +277,7 @@ public class UMLModelRootNode extends UMLModelElementNode
      * @return The IProject instance.
      * @see IProject
      */
+    @Override
     public IElement getModelElement()
     {
         if (mHelper==null)
@@ -291,10 +291,12 @@ public class UMLModelRootNode extends UMLModelElementNode
      *
      * @param element The Model element that represents the project.
      */
+    @Override
     protected void addElementCookie(IElement element)
     {
     }
     
+    @Override
     public Node.Cookie getCookie(Class type)
     {
         Node.Cookie cookie = super.getCookie(type);
@@ -328,6 +330,7 @@ public class UMLModelRootNode extends UMLModelElementNode
     //    }
     
     
+    @Override
     public Image getIcon( int type )
     {
         Image original = super.getIcon( type );
@@ -335,6 +338,7 @@ public class UMLModelRootNode extends UMLModelElementNode
         return original;
     }
     
+    @Override
     public Image getOpenedIcon( int type )
     {
         Image original = super.getOpenedIcon(type);
@@ -349,12 +353,21 @@ public class UMLModelRootNode extends UMLModelElementNode
     
     
     
+    @Override
     public void recalculateChildren()
     {
-        UMLChildren children = (UMLChildren)getChildren();
+        Children childs = getChildren();
+        if(childs instanceof UMLChildren){
+             UMLChildren children = (UMLChildren)childs;
         children.recalculateChildren();
         // a not so perfect approach to notify listeners to recalculate their imported list #130727
         fireNodeDestroyed();
+        } else{
+           if(childs instanceof Children.Array){
+               //TODO validate the pertinence of creating factory //UMLChildren.create(getChildren(), true);
+           }
+        }
+       
     }
     
     ///////////////////////////////////////////////////////////////////////////
@@ -365,6 +378,7 @@ public class UMLModelRootNode extends UMLModelElementNode
      * call this method if a looup is added.  When a lookup is added then the
      * lookup is used to find the cookies.
      */
+    @Override
     protected void initCookies()
     {
         
@@ -376,6 +390,7 @@ public class UMLModelRootNode extends UMLModelElementNode
    /* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventsSink#onProjectTreeFilterDialogInit(org.netbeans.modules.uml.ui.controls.filter.IFilterDialog, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
+    @Override
     public void onProjectTreeFilterDialogInit(
             IFilterDialog dialog,IResultCell cell)
     {}
@@ -383,6 +398,7 @@ public class UMLModelRootNode extends UMLModelElementNode
    /* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventsSink#onProjectTreeFilterDialogOKActivated(org.netbeans.modules.uml.ui.controls.filter.IFilterDialog, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
+    @Override
     public void onProjectTreeFilterDialogOKActivated(
             IFilterDialog dialog, IResultCell cell)
     {
@@ -396,16 +412,13 @@ public class UMLModelRootNode extends UMLModelElementNode
             // Model root node children are refresh with filter applied
             // TODO - unfortunately, this "flattens" any expanded nodes
             // instead of leaving them in their current expanded state
-	    SwingUtilities.invokeLater(new Runnable() 
-	    {
-		public void run() 
-		{
-		    recalculateChildren();
-		}
-	    });
+	    SwingUtilities.invokeLater(() -> {
+                recalculateChildren();
+            });
         }
     }
     
+    @Override
     public void filterListenerRegistered(boolean register)
     {
         DispatchHelper dispatchHelper = new DispatchHelper();
@@ -423,11 +436,13 @@ public class UMLModelRootNode extends UMLModelElementNode
     }
     
     
+    @Override
     public DefaultTreeModel getTreeModelFilter()
     {
         return treeModelFilter;
     }
     
+    @Override
     public void setTreeModelFilter(DefaultTreeModel val)
     {
         this.treeModelFilter = val;
@@ -436,7 +451,7 @@ public class UMLModelRootNode extends UMLModelElementNode
     // Gets the Context menu for the Model node from layer.xml
     protected void addContextMenu(List actions)
     {
-        Action[] nodeActions = null;
+        Action[] nodeActions;
 //        UMLElementNode node = new UMLElementNode();
         nodeActions = getActionsFromRegistry(
               "contextmenu/uml/designpatternformodel");
@@ -477,21 +492,25 @@ public class UMLModelRootNode extends UMLModelElementNode
         }
     }
     
+    @Override
     public boolean canCopy()
     {
         return false;
     }
     
+    @Override
     public boolean canCut()
     {
         return false;
     }
     
+    @Override
     public boolean canRename()
     {
         return false;
     }
     
+    @Override
     public boolean canDestroy()
     {
         return false;
@@ -501,6 +520,7 @@ public class UMLModelRootNode extends UMLModelElementNode
    /* (non-Javadoc)
     * @see java.lang.Object#equals(java.lang.Object)
     */
+    @Override
     public boolean equals(Object obj)
     {
 	// NB60TBD special case for diagrams root node to make it work with NB60

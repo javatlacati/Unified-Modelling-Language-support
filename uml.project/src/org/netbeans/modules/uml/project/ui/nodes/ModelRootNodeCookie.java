@@ -49,7 +49,6 @@
  */
 
 package org.netbeans.modules.uml.project.ui.nodes;
-import org.netbeans.modules.uml.ui.controls.filter.IFilterDialog;
 import javax.swing.tree.DefaultTreeModel;
 import org.openide.nodes.Node;
 
