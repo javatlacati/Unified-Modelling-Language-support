@@ -48,7 +48,6 @@ import java.io.IOException;
 import java.net.URI;
 import java.util.*;
 import java.util.Map.Entry;
-import javax.swing.SwingUtilities;
 
 import org.netbeans.api.project.Project;
 import org.netbeans.api.project.ProjectManager;
@@ -76,6 +75,7 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.project.ui.common.JavaSourceRootsUI;
 import org.netbeans.modules.uml.project.ui.customizer.UMLProjectProperties;
 import org.netbeans.modules.uml.project.ui.wizards.NewUMLProjectWizardIterator;
+import org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager;
 import org.openide.DialogDisplayer;
 import org.openide.NotifyDescriptor;
 import org.openide.util.Exceptions;
@@ -650,12 +650,16 @@ public class UMLProjectGenerator {
 
     public static void createNewDiagram(INamespace namespace, int diagramKind, String diagramName)
             throws IOException {
-        IDiagram newDiagram = ProductHelper.getProductDiagramManager().
-                createDiagram(diagramKind, namespace, diagramName, null);
-        if (newDiagram != null) {
-            newDiagram.setDirty(true);
-            newDiagram.save();
+        IProductDiagramManager diagramManager = ProductHelper.getProductDiagramManager();
+        if (diagramManager != null) {
+            IDiagram newDiagram = diagramManager.
+                    createDiagram(diagramKind, namespace, diagramName, null);
+            if (newDiagram != null) {
+                newDiagram.setDirty(true);
+                newDiagram.save();
+            }
+        }else{
+            
         }
-
     }
 }

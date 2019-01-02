@@ -193,6 +193,7 @@ public class NewUMLProjectWizardIterator
     }
     
     
+    @Override
     public Set/*<FileObject>*/ instantiate() throws IOException 
     {
         Set resultSet = new HashSet ();
@@ -215,7 +216,7 @@ public class NewUMLProjectWizardIterator
         // depending on the mode      
         if (this.type == TYPE_UML || this.type == TYPE_UML_JAVA) 
         {
-           String modelingMode = null ; 
+           String modelingMode ; 
 //                (String)wiz.getProperty(NewUMLProjectWizardIterator.PROP_MODELING_MODE);
             
             if (this.type == TYPE_UML_JAVA)
@@ -283,7 +284,7 @@ public class NewUMLProjectWizardIterator
         // MCF 
 	// This project count stuff is intended to help automatically increment
 	// the default project name that appears in wizard.
-        UMLProjectSettings.getDefault().setNewProjectCount(index.intValue());
+        UMLProjectSettings.getDefault().setNewProjectCount(index);
              
         resultSet.add (dir);
         dirF = (dirF != null) ? dirF.getParentFile() : null;
@@ -294,6 +295,7 @@ public class NewUMLProjectWizardIterator
         return resultSet;
     }
     
+    @Override
     public void initialize(WizardDescriptor wiz) 
     {
         this.wiz = wiz;
@@ -320,8 +322,7 @@ public class NewUMLProjectWizardIterator
                 // assume Swing components
                 JComponent jc = (JComponent)c;
                 // Step #.
-                jc.putClientProperty(
-                    WizardDescriptor.PROP_CONTENT_SELECTED_INDEX, new Integer(i)); // NOI18N
+                jc.putClientProperty(WizardDescriptor.PROP_CONTENT_SELECTED_INDEX, i); // NOI18N
                 
                 // Step name (actually the whole list for reference).
                 jc.putClientProperty(WizardDescriptor.PROP_CONTENT_DATA, steps); // NOI18N
@@ -329,6 +330,7 @@ public class NewUMLProjectWizardIterator
         }
     }
 
+    @Override
     public void uninitialize(WizardDescriptor wiz) 
     {
         // why bother with this if we set wiz to null?
@@ -344,13 +346,15 @@ public class NewUMLProjectWizardIterator
     }
     
 	
+    @Override
     public String name() 
     {
         return MessageFormat.format(NbBundle.getMessage(
             NewUMLProjectWizardIterator.class,"LAB_IteratorName"), // NO18N
-            new Object[] {new Integer(index + 1), new Integer(panels.length)});
+            new Object[] {index + 1, panels.length});
     }
     
+    @Override
     public boolean hasNext() 
     {
         PanelConfigureProject configPanel = (PanelConfigureProject)panels[0];
@@ -375,30 +379,36 @@ public class NewUMLProjectWizardIterator
         hideJavaProjectPanel = hide;
     }
     
+    @Override
     public boolean hasPrevious()
     {
         return index > 0;
     }
     
+    @Override
     public void nextPanel()
     {
         if (!hasNext()) throw new NoSuchElementException();
         index++;
     }
     
+    @Override
     public void previousPanel()
     {
         if (!hasPrevious()) throw new NoSuchElementException();
         index--;
     }
     
+    @Override
     public WizardDescriptor.Panel current()
     {
         return panels[index];
     }
     
     // If nothing unusual changes in the middle of the wizard, simply:
+    @Override
     public final void addChangeListener(ChangeListener l){}
+    @Override
     public final void removeChangeListener(ChangeListener l){}
     
 }
